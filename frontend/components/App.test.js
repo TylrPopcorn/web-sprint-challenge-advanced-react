@@ -29,6 +29,7 @@ test("input exist/works", () => {
   // const emailField = screen.getByLabelText(/type email/i)
   const emailField = document.querySelector('#email')
   userEvent.type(emailField, "test@yahoo.com")
+
   // expect(emailField).toHaveTextContent("test@yahoo.com")
 
   fireEvent.click(submit)
